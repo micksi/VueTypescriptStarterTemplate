@@ -1,8 +1,14 @@
 <template>
-  <div>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <todo-list v-if="!todoId"></todo-list>
-    <todo-edit v-else :todoId="todoId"></todo-edit>
+  <div class="row">
+
+    <div class="col-4">
+      <todo-list></todo-list>
+    </div>
+
+    <div class="col-8">
+      <todo-edit v-if="todoId" :todoId="todoId"></todo-edit>
+    </div>
+
   </div>
 </template>
 

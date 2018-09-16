@@ -2,7 +2,8 @@
   <div>
     <ul>
       <li v-for="todo in todos" :key="todo.id">
-        <router-link :to="{name: 'todo', params: {id: todo.id}}">{{ todo.id }} - {{ todo.title }}</router-link>
+        <router-link :style="{ 'text-decoration': todo.completed?'line-through':''}"
+        :to="{name: 'todo', params: {id: todo.id}}">{{ todo.id }} - {{ todo.title }}</router-link>
       </li>
     </ul>
   </div>
