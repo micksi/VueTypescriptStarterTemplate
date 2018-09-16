@@ -1,6 +1,6 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-import { MutationTree, ActionTree, GetterTree } from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
+import { MutationTree, ActionTree, GetterTree } from "vuex";
 
 
 Vue.use(Vuex)
@@ -11,9 +11,9 @@ interface State {
 };
 
 const mutations: MutationTree<State> = {
-    clearInput: (s) => s.stateInput = '',
+    clearInput: (s) => s.stateInput = "",
     setInput: (s, arg) => { s.stateInput = arg; },
-    clearResult: (s) => s.stateResult = '',
+    clearResult: (s) => s.stateResult = "",
     setResult: (s, arg) => { s.stateResult = arg; },
 };
 
@@ -25,8 +25,8 @@ const getters: GetterTree<State, any> = {
 }
 
 const state: State = {
-    stateInput: 'From State',
-    stateResult: 'From State',
+    stateInput: "From State",
+    stateResult: "From State",
 };
 
 export default new Vuex.Store<State>({

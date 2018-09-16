@@ -1,5 +1,5 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import Vue from "vue";
+import Router from "vue-router";
 
 Vue.use(Router);
 
@@ -13,14 +13,14 @@ function loadView(view: string) {
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: loadView('Home.vue'),
+      path: "/",
+      name: "home",
+      component: loadView("Home.vue"),
     },
     {
-      path: '/about',
-      name: 'about',
-      component: loadView('About.vue'),
+      path: "/about",
+      name: "about",
+      component: loadView("About.vue"),
     },
   ],
 });
